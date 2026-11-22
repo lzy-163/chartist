@@ -41,4 +41,4 @@ jobs:
         if: "failure() && matrix.stage != 'unit'"
         with:
           name: Image snapshots (${{ matrix.stage }})
-          path: test/__image_snapshots__/
+          path: test/__image_snapshots__/__diff_output__/
