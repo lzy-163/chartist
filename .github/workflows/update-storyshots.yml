@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Update snapshots
-        run: pnpm test:storyshots -u
+        run: pnpm test:storyshots -- -u
       - name: Collect artifacts
         uses: actions/upload-artifact@v3
         if: always()
